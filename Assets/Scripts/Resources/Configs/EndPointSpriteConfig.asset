@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9753d0513c5a4033b671e482af5c580e, type: 3}
+  m_Name: EndPointSpriteConfig
+  m_EditorClassIdentifier: 
+  _typedSprites:
+    _pairs:
+    - _key: 1
+      _value: {fileID: 21300000, guid: 83105c429a4fd8b4b8c035a67b54c6a1, type: 3}
+    - _key: 2
+      _value: {fileID: 21300000, guid: 181a39b54b084ba4391f5f7cf12f3a0c, type: 3}
+    - _key: -1
+      _value: {fileID: 21300000, guid: 81b21178fbc2c8b48b54331ae8dc10db, type: 3}

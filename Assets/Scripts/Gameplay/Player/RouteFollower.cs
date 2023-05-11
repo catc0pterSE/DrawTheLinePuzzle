@@ -7,7 +7,7 @@ namespace Gameplay.Player
 {
     public class RouteFollower : MonoBehaviour
     {
-        [SerializeField] private float _travelTime = 5f;
+        [SerializeField] private float _travelTime = 1f;
 
         private Coroutine _movingRoutine;
 
@@ -25,45 +25,16 @@ namespace Gameplay.Player
 
         private IEnumerator Move(Vector3[] route)
         {
-            /*WaitForSeconds delay = new WaitForSeconds(_travelTime / route.Length);
+            WaitForSeconds delay = new WaitForSeconds(_travelTime / route.Length);
 
             foreach (var point in route)
             {
                 transform.position = point;
                 yield return delay;
-            }*/
-
-            float speed = CalculateRouteLength(route);
-
-            int i = 0;
-            while (i < route.Length-1)
-            {
-                Vector3 currentPosition = transform.position;
-                Vector3 target = route[i];
-
-                if (Vector3.Distance(currentPosition, target) > Mathf.Epsilon)
-                    transform.position = Vector3.MoveTowards(currentPosition, target, speed*Time.deltaTime);
-                else
-                    i++;
-
-                yield return null;
             }
-
 
             IsReached = true;
             Reached?.Invoke();
-        }
-
-        private float CalculateRouteLength(Vector3[] route)
-        {
-            float length = 0;
-
-            for (int i = 1; i < route.Length; i++)
-            {
-                length += Vector3.Distance(route[i], route[i - 1]);
-            }
-
-            return length;
         }
     }
 }

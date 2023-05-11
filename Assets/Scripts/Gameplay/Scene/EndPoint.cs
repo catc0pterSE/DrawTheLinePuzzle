@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using Gameplay.Player;
+using UnityEngine;
 
-namespace Scene
+namespace Gameplay.Scene
 {
     public class EndPoint : MonoBehaviour
     {

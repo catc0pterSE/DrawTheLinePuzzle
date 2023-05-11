@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace Scene
+namespace Gameplay.Player
 {
     public class RouteFollower: MonoBehaviour
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using Configs;
+using Gameplay.Player;
 using Infrastructure.AssetProvider;
-using Scene;
 using UI.MainMenu;
 using UnityEngine;
 using Utility.Static.StringNames;

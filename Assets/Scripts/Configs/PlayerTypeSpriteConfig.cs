@@ -1,5 +1,5 @@
-﻿using Scene;
-using SerializableDictionary.Scripts;
+﻿using Gameplay.Player;
+using Modules;
 using UnityEngine;
 
 namespace Configs

@@ -3,11 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Configs;
+using Gameplay.Scene;
 using Infrastructure.AssetProvider;
 using UnityEngine;
 using Utility.Static.StringNames;
 
-namespace Scene
+namespace Gameplay.Player
 {
     public class LineDrawer : MonoBehaviour
     {

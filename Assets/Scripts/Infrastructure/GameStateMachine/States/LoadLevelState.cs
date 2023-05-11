@@ -1,10 +1,10 @@
 ﻿using System;
+using Gameplay.Scene;
 using Infrastructure.AssetProvider;
 using Infrastructure.GameObjectFactory;
 using Infrastructure.Progression;
 using Infrastructure.SceneManagement;
 using Modules.StateMachine;
-using Scene;
 using UnityEngine;
 using Utility.Static.StringNames;
 

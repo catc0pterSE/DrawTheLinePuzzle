@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SerializableDictionary.Scripts
+namespace Modules
 {
     [Serializable] 
     public struct KeyValuePair<TKey, TValue>

@@ -1,4 +1,5 @@
-﻿using Infrastructure.GameObjectFactory;
+﻿using Data;
+using Infrastructure.GameObjectFactory;
 using Infrastructure.GameStateMachine;
 using Infrastructure.GameStateMachine.States;
 using Infrastructure.Progression;

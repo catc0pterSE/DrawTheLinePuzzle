@@ -2,14 +2,12 @@ using System;
 using System.Collections.Generic;
 using Infrastructure.EntryPoint;
 using Infrastructure.GameStateMachine.States;
-using Infrastructure.SaveLoad;
 using Infrastructure.SceneManagement;
 using Modules.StateMachine;
-using UnityEngine;
 
 namespace Infrastructure.GameStateMachine
 {
-    public class GameStateMachine : Modules.StateMachine.StateMachine
+    public class GameStateMachine : StateMachine
     {
         public GameStateMachine(SceneLoader sceneLoader, Services.Services services, IApplicationQuitHandler applicationQuitHandler)
         {

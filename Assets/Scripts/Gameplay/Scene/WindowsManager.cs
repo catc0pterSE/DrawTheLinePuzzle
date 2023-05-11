@@ -5,7 +5,7 @@ using UnityEngine;
 using Utility.Extensions;
 using Utility.Static;
 
-namespace Scene
+namespace Gameplay.Scene
 {
     public class WindowsManager : MonoBehaviour
     {

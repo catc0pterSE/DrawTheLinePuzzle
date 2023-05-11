@@ -4,7 +4,7 @@ using Infrastructure.AssetProvider;
 using UnityEngine;
 using Utility.Static.StringNames;
 
-namespace Scene
+namespace Gameplay.Player
 {
     public class Player : MonoBehaviour
     {

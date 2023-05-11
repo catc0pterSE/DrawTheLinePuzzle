@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using Configs;
+using Gameplay.Player;
 using Infrastructure.AssetProvider;
 using Infrastructure.GameObjectFactory;
 using Infrastructure.Progression;
@@ -10,7 +10,7 @@ using UnityEngine;
 using Utility.Extensions;
 using Utility.Static.StringNames;
 
-namespace Scene
+namespace Gameplay.Scene
 {
     public class LevelManager : MonoBehaviour
     {
@@ -18,7 +18,7 @@ namespace Scene
         [SerializeField] private EndPoint[] _endPoints;
         [SerializeField] private WindowsManager _windowsManager;
 
-        private List<Player> _players = new List<Player>();
+        private List<Player.Player> _players = new List<Player.Player>();
         private IGameObjectFactory _gameObjectFactory;
         private IAssetProvider _assetProvider;
         private int _levelNumber;
@@ -52,7 +52,7 @@ namespace Scene
             _startPoints.Map(point =>
             {
                 PlayerType type = point.Type;
-                Player player = _gameObjectFactory.CreatePlayer(point.transform.position);
+                Player.Player player = _gameObjectFactory.CreatePlayer(point.transform.position);
                 player.Initialize(type, _assetProvider);
                 _players.Add(player);
             });

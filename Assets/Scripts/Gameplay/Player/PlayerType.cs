@@ -1,4 +1,4 @@
-﻿namespace Scene
+﻿namespace Gameplay.Player
 {
     [System.Flags]
     public enum PlayerType

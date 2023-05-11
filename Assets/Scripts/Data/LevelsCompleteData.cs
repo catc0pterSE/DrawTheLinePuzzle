@@ -3,7 +3,7 @@ using Infrastructure.SaveLoad;
 using UnityEngine;
 using Utility.Static;
 
-namespace UI.MainMenu
+namespace Data
 {
     [Serializable]
     public class LevelsCompleteData : ISavable

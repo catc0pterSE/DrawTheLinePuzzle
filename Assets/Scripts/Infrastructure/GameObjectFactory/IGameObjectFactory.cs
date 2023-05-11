@@ -1,5 +1,5 @@
-﻿using Infrastructure.Services;
-using Scene;
+﻿using Gameplay.Player;
+using Infrastructure.Services;
 using UI.MainMenu;
 using UnityEngine;
 

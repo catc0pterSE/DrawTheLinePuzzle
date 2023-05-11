@@ -1,4 +1,5 @@
-﻿using Infrastructure.Services;
+﻿using Data;
+using Infrastructure.Services;
 using UI.MainMenu;
 
 namespace Infrastructure.Progression

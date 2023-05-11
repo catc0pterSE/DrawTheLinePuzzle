@@ -13,6 +13,8 @@ namespace Infrastructure.EntryPoint
 
         private void Awake()
         {
+            Application.targetFrameRate = 60;
+            
             _loadingCurtain.Show();
 
             _stateMachine = new GameStateMachine.GameStateMachine(
